@@ -2,7 +2,7 @@
   "name": "movie-poster",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "Darren Thomas <bittledroid@gmail.com>",
+  "author": "",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
