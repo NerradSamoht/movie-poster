@@ -13,19 +13,18 @@
 var axios = require('axios');
 
 const api_key = '4120175e535d978bf6f3785ea754ffc2';
-// https://laracasts.com/discuss/channels/vue/vuejs-transition-for-loading-data
 export default {
   name: 'app',
   data() {
 		return {
 			movietitle: '',
-			movieposterurl: 'http://image.tmdb.org/t/p/w342/kBf3g9crrADGMc2AMAMlLBgSm2h.jpg'
+			movieposterurl: 'https://image.tmdb.org/t/p/w342/kBf3g9crrADGMc2AMAMlLBgSm2h.jpg'
 		}
   },
 	methods: {
 		request () {
-			axios.get('http://api.themoviedb.org/3/search/movie?query=' + this.movietitle + '&api_key=' + api_key).then((response) => {
-				this.movieposterurl = 'http://image.tmdb.org/t/p/original' + response.data.results[0].poster_path;
+			axios.get('https://api.themoviedb.org/3/search/movie?query=' + this.movietitle + '&api_key=' + api_key).then((response) => {
+				this.movieposterurl = 'https://image.tmdb.org/t/p/original' + response.data.results[0].poster_path;
 			});
 		}
 	}
